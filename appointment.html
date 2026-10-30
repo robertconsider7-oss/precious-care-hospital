@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Request | Precious Care Hospital</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Request a Hospital Appointment</h1>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="services.html">Services</a> |
+        <a href="doctors.html">Doctors</a> |
+        <a href="appointment.html">Appointments</a> |
+        <a href="patient-guide.html">Patient Guide</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <p>
+        Complete the demonstration form below to request an appointment.
+        Use fictional sample patient information for your examination.
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Section 1: Patient Details</legend>
+
+            <p>
+                <label for="patient-name">Patient Name:</label><br>
+                <input type="text" id="patient-name" name="patient_name"
+                       autocomplete="name" required>
+            </p>
+
+            <p>
+                <label for="patient-email">Email Address:</label><br>
+                <input type="email" id="patient-email" name="email"
+                       autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="patient-phone">Phone Number:</label><br>
+                <input type="tel" id="patient-phone" name="phone"
+                       autocomplete="tel" required>
+            </p>
+
+            <p>
+                <label for="date-of-birth">Date of Birth:</label><br>
+                <input type="date" id="date-of-birth" name="date_of_birth"
+                       max="2026-10-16" required>
+            </p>
+
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="contact-email" name="contact_method"
+                   value="Email" required>
+            <label for="contact-email">Email</label><br>
+
+            <input type="radio" id="contact-phone" name="contact_method"
+                   value="Phone">
+            <label for="contact-phone">Phone</label><br>
+
+            <input type="radio" id="contact-sms" name="contact_method"
+                   value="SMS">
+            <label for="contact-sms">SMS</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Section 2: Appointment Details</legend>
+
+            <p>
+                <label for="department">Department:</label><br>
+                <select id="department" name="department" required>
+                    <option value="">Choose a department</option>
+                    <option value="general">General Outpatient</option>
+                    <option value="maternity">Maternity</option>
+                    <option value="laboratory">Laboratory</option>
+                    <option value="paediatrics">Paediatrics</option>
+                    <option value="dental">Dental</option>
+                    <option value="eye">Eye Clinic</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="doctor">Preferred Doctor:</label><br>
+                <select id="doctor" name="preferred_doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option value="ada-okoro">Dr. Ada Okoro</option>
+                    <option value="samuel-bello">Dr. Samuel Bello</option>
+                    <option value="mary-eze">Dr. Mary Eze</option>
+                    <option value="david-obi">Dr. David Obi</option>
+                    <option value="esther-nwosu">Dr. Esther Nwosu</option>
+                    <option value="no-preference">No preference</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="appointment-date">Preferred Appointment Date:</label><br>
+                <input type="date" id="appointment-date" name="appointment_date"
+                       min="2026-10-16" required>
+            </p>
+
+            <p>
+                <label for="appointment-time">Preferred Time:</label><br>
+                <input type="time" id="appointment-time" name="appointment_time"
+                       required>
+            </p>
+
+            <p>Appointment Type:</p>
+            <input type="radio" id="first-visit" name="visit_type"
+                   value="First visit" required>
+            <label for="first-visit">First visit</label><br>
+
+            <input type="radio" id="follow-up" name="visit_type"
+                   value="Follow-up">
+            <label for="follow-up">Follow-up</label>
+
+            <p>
+                <label for="appointment-reason">Reason for Appointment:</label><br>
+                <textarea id="appointment-reason" name="reason"
+                          rows="5" cols="40" maxlength="500"
+                          placeholder="Enter a brief, non-sensitive reason for this demonstration."
+                          required></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Section 3: Confirmation</legend>
+
+            <input type="checkbox" id="policy" name="appointment_policy"
+                   value="accepted" required>
+            <label for="policy">
+                I understand that this is an appointment request and that
+                the hospital must confirm availability.
+            </label>
+        </fieldset>
+
+        <p>
+            <strong>Important:</strong> This HTML demonstration does not
+            submit information to a hospital or book an actual appointment.
+            The form requires a properly configured server to process requests.
+        </p>
+
+        <button type="submit">Submit Request</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+</main>
+
+<footer>
+    <hr>
+    <p>Fictional examination website — Precious Care Specialist Hospital.</p>
+    <a href="doctors.html">View Doctors</a> |
+    <a href="contact.html">Contact Us</a>
+</footer>
+
+</body>
+</html>
